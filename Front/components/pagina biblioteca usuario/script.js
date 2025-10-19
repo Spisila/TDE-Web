@@ -1,3 +1,4 @@
+/*
 var date;
 var image;
 var title;
@@ -50,4 +51,6 @@ for (var i = 0; i < new_list.length; i++) {
   console.log(image);
 
   document.getElementById("game_news_list").innerHTML += base_game_news;
+  
 }
+*/
