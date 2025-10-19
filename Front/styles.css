@@ -58,12 +58,14 @@ body {
 .upper_right_container {
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 
     width: 15%;
     height: 100%;
+
+    gap: 5px;
 
     background-color: rgb(50, 40, 166);
 
@@ -74,7 +76,17 @@ body {
     border: 0;
     border-radius: 15px;
 
-    width: 50%;
+    width: 45%;
+    height: 50%;
+
+}
+
+.cadastro_button {
+
+    border: 0;
+    border-radius: 15px;
+
+    width: 45%;
     height: 50%;
 
 }
@@ -154,65 +166,30 @@ body {
 
 }
 
-.featured_game_thumbnail {
+.featured_game_thumbnail {}
 
+.featured_game_info {}
 
-}
+.featured_game_title {}
 
-.featured_game_info {
+.featured_game_images {}
 
+.featured_game_status {}
 
-}
+.featured_game_price {}
 
-.featured_game_title {
+.featured_discounts_container {}
 
+.title_and_seemore_container {}
 
-}
+.games_on_discount_container {}
 
-.featured_game_images {
+.game_on_discount {}
 
+.game_on_discount_image {}
 
-}
+.game_on_discount_info_container {}
 
-.featured_game_status {
+.discount_duration_info {}
 
-
-}
-
-.featured_game_price {
-
-
-}
-
-.featured_discounts_container {
-
-}
-
-.title_and_seemore_container {
-
-}
-
-.games_on_discount_container {
-
-}
-
-.game_on_discount {
-
-}
-
-.game_on_discount_image {
-
-}
-
-.game_on_discount_info_container {
-
-}
-
-.discount_duration_info {
-
-}
-
-.discount_and_price_info {
-
-    
-}
+.discount_and_price_info {}
