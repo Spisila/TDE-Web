@@ -14,49 +14,49 @@ function pesquisarJogo() {
 // Variavel cards
 
 var trending = [
-    { img: '"<img src="img/Banners/Banner-003.png" alt="">"', nome: "aa", preco: 10 },
-    { img: '"<img src="img/Banners/Banner-005.png" alt="">"', nome: "aa", preco: 10 },
-    { img: '"<img src="img/Banners/Banner-001.png" alt="">"', nome: "aa", preco: 10 },
-    { img: '"<img src="img/Banners/Banner-007.png" alt="">"', nome: "aa", preco: 10 },
-    { img: '"<img src="img/Banners/Banner-010.png" alt="">"', nome: "aa", preco: 10 },
-    { img: '"<img src="img/Banners/Banner-002.png" alt="">"', nome: "aa", preco: 10 }
+    { img: "img/Banners/Banner-003.png", nome: "aa", preco: 10 },
+    { img: "img/Banners/Banner-005.png", nome: "aa", preco: 10 },
+    { img: "img/Banners/Banner-001.png", nome: "aa", preco: 10 },
+    { img: "img/Banners/Banner-007.png", nome: "aa", preco: 10 },
+    { img: "img/Banners/Banner-010.png", nome: "aa", preco: 10 },
+    { img: "img/Banners/Banner-002.png", nome: "aa", preco: 10 }
 ];
 
 var recommend = [
-    { img: '"<img src="img/Banners/Banner-087.png" alt="">"', nome: "aa", preco: 10 },
-    { img: '"<img src="img/Banners/Banner-069.png" alt="">"', nome: "aa", preco: 10 },
-    { img: '"<img src="img/Banners/Banner-054.png" alt="">"', nome: "aa", preco: 10 },
-    { img: '"<img src="img/Banners/Banner-012.png" alt="">"', nome: "aa", preco: 10 },
-    { img: '"<img src="img/Banners/Banner-024.png" alt="">"', nome: "aa", preco: 10 },
-    { img: '"<img src="img/Banners/Banner-076.png" alt="">"', nome: "aa", preco: 10 }
+    { img: "img/Banners/Banner-087.png", nome: "aa", preco: 10 },
+    { img: "img/Banners/Banner-069.png", nome: "aa", preco: 10 },
+    { img: "img/Banners/Banner-054.png", nome: "aa", preco: 10 },
+    { img: "img/Banners/Banner-012.png", nome: "aa", preco: 10 },
+    { img: "img/Banners/Banner-024.png", nome: "aa", preco: 10 },
+    { img: "img/Banners/Banner-076.png", nome: "aa", preco: 10 }
 ];
 
 var bestsellers = [
-    { img: '"<img src="img/Banners/Banner-043.png" alt="">"', nome: "aa", preco: 10 },
-    { img: '"<img src="img/Banners/Banner-046.png" alt="">"', nome: "aa", preco: 10 },
-    { img: '"<img src="img/Banners/Banner-056.png" alt="">"', nome: "aa", preco: 10 },
-    { img: '"<img src="img/Banners/Banner-090.png" alt="">"', nome: "aa", preco: 10 },
-    { img: '"<img src="img/Banners/Banner-096.png" alt="">"', nome: "aa", preco: 10 },
-    { img: '"<img src="img/Banners/Banner-078.png" alt="">"', nome: "aa", preco: 10 }
+    { img: "img/Banners/Banner-043.png", nome: "aa", preco: 10 },
+    { img: "img/Banners/Banner-046.png", nome: "aa", preco: 10 },
+    { img: "img/Banners/Banner-056.png", nome: "aa", preco: 10 },
+    { img: "img/Banners/Banner-090.png", nome: "aa", preco: 10 },
+    { img: "img/Banners/Banner-096.png", nome: "aa", preco: 10 },
+    { img: "img/Banners/Banner-078.png", nome: "aa", preco: 10 }
 ];
 
 var categoria = [
-    { tema: '"<img src="img/Banners/Banner-078.png" alt="">"' },
-    { tema:'"<img src="img/Banners/Banner-078.png" alt="">"' },
-    { tema: '"<img src="img/Banners/Banner-078.png" alt="">"' },
-    { tema: '"<img src="img/Banners/Banner-078.png" alt="">"' },
-    { tema: '"<img src="img/Banners/Banner-078.png" alt="">"' },
-    { tema: '"<img src="img/Banners/Banner-078.png" alt="">"' },
-    { tema: '"<img src="img/Banners/Banner-078.png" alt="">"' },
-    { tema: '"<img src="img/Banners/Banner-078.png" alt="">"' },
-    { tema: '"<img src="img/Banners/Banner-078.png" alt="">"' }
+    { tema: "img/Banners/Banner-078.png" },
+    { tema: "img/Banners/Banner-078.png" },
+    { tema: "img/Banners/Banner-078.png" },
+    { tema: "img/Banners/Banner-078.png"},
+    { tema: "img/Banners/Banner-078.png"},
+    { tema: "img/Banners/Banner-078.png"},
+    { tema: "img/Banners/Banner-078.png"},
+    { tema: "img/Banners/Banner-078.png"},
+    { tema: "img/Banners/Banner-078.png"}
 ];
 
 var review = [
-    { img: '<img src="img/char.png" alt="">', nick: "aa", nota: 10 },
-    { img: '<img src="img/bulba.png" alt="">', nick: "aa", nota: 10 },
-    { img: '<img src="img/squirtle.webp" alt="">', nick: "aa", nota: 10 },
-    { img: '<img src="img/mew.png" alt="">', nick: "aa", nota: 10 },
+    { img: "img/char.png", nick: "aa", nota: 10, comentario: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" },
+    { img: "img/bulba.png", nick: "aa", nota: 10, comentario: "aa" },
+    { img: "img/squirtle.webp", nick: "aa", nota: 10, comentario: "aa" },
+    { img: "img/mew.png", nick: "aa", nota: 10, comentario: "aa" },
 ];
 
 // Carregar pagina
@@ -87,7 +87,7 @@ if (usuarioLogado) {
             container_trending.innerHTML += `
                 <div class="case_trending_jogo">
                     <div class="img_trending">
-                        ${trending[i].img}
+                        <img src=${trending[i].img}>
                     </div>
                     <div class="descricao_trending">
                         <div class="name_trending">
@@ -111,7 +111,7 @@ if (usuarioLogado) {
             container_recommend.innerHTML += `
                 <div class="case_recommend_jogo">
                     <div class="img_recommend">
-                        ${recommend[i].img}
+                        <img src=${recommend[i].img}>
                     </div>
                     <div class="descricao_recommend">
                         <div class="name_recommend">
@@ -135,7 +135,7 @@ if (usuarioLogado) {
             container_bestsellers.innerHTML += `
                 <div class="case_bestsellers_jogo">
                     <div class="img_bestsellers">
-                        ${bestsellers[i].img}
+                        <img src=${bestsellers[i].img}>
                     </div>
                     <div class="descricao_bestsellers">
                         <div class="name_bestsellers">
@@ -160,7 +160,7 @@ if (usuarioLogado) {
 
                 `
                 <div class="tema">
-                    ${categoria[i].tema}
+                    <img src=${categoria[i].tema}>
                 </div>
             `;
         }
@@ -172,10 +172,19 @@ if (usuarioLogado) {
     for (let i = 0; i < review.length; i++) {
         const card_review = `
             <div class="card_review">
-                <div class="img_review">${review[i].img}</div>
+                <div class="img_review">
+                    <img src=${review[i].img}>
+                </div>
                 <div class="tag">
-                    <div class="nick_name">${review[i].nick}</div>
-                    <div class="nota">${review[i].nota}</div>
+                    <div class="nick_name">
+                        ${review[i].nick}
+                    </div>
+                    <div class="nota">
+                        ${review[i].nota}
+                    </div>
+                </div>
+                <div class="comentario">
+                    ${review[i].comentario}
                 </div>
             </div>
         `;
