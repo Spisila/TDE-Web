@@ -14,42 +14,42 @@ function pesquisarJogo() {
 // Variavel cards
 
 var trending = [
-    { img: "a", nome: "aa", preco: 10 },
-    { img: "a", nome: "aa", preco: 10 },
-    { img: "a", nome: "aa", preco: 10 },
-    { img: "a", nome: "aa", preco: 10 },
-    { img: "a", nome: "aa", preco: 10 },
-    { img: "a", nome: "aa", preco: 10 }
+    { img: '"<img src="img/Banners/Banner-003.png" alt="">"', nome: "aa", preco: 10 },
+    { img: '"<img src="img/Banners/Banner-005.png" alt="">"', nome: "aa", preco: 10 },
+    { img: '"<img src="img/Banners/Banner-001.png" alt="">"', nome: "aa", preco: 10 },
+    { img: '"<img src="img/Banners/Banner-007.png" alt="">"', nome: "aa", preco: 10 },
+    { img: '"<img src="img/Banners/Banner-010.png" alt="">"', nome: "aa", preco: 10 },
+    { img: '"<img src="img/Banners/Banner-002.png" alt="">"', nome: "aa", preco: 10 }
 ];
 
 var recommend = [
-    { img: "a", nome: "aa", preco: 10 },
-    { img: "a", nome: "aa", preco: 10 },
-    { img: "a", nome: "aa", preco: 10 },
-    { img: "a", nome: "aa", preco: 10 },
-    { img: "a", nome: "aa", preco: 10 },
-    { img: "a", nome: "aa", preco: 10 }
+    { img: '"<img src="img/Banners/Banner-087.png" alt="">"', nome: "aa", preco: 10 },
+    { img: '"<img src="img/Banners/Banner-069.png" alt="">"', nome: "aa", preco: 10 },
+    { img: '"<img src="img/Banners/Banner-054.png" alt="">"', nome: "aa", preco: 10 },
+    { img: '"<img src="img/Banners/Banner-012.png" alt="">"', nome: "aa", preco: 10 },
+    { img: '"<img src="img/Banners/Banner-024.png" alt="">"', nome: "aa", preco: 10 },
+    { img: '"<img src="img/Banners/Banner-076.png" alt="">"', nome: "aa", preco: 10 }
 ];
 
 var bestsellers = [
-    { img: "a", nome: "aa", preco: 10 },
-    { img: "a", nome: "aa", preco: 10 },
-    { img: "a", nome: "aa", preco: 10 },
-    { img: "a", nome: "aa", preco: 10 },
-    { img: "a", nome: "aa", preco: 10 },
-    { img: "a", nome: "aa", preco: 10 }
+    { img: '"<img src="img/Banners/Banner-043.png" alt="">"', nome: "aa", preco: 10 },
+    { img: '"<img src="img/Banners/Banner-046.png" alt="">"', nome: "aa", preco: 10 },
+    { img: '"<img src="img/Banners/Banner-056.png" alt="">"', nome: "aa", preco: 10 },
+    { img: '"<img src="img/Banners/Banner-090.png" alt="">"', nome: "aa", preco: 10 },
+    { img: '"<img src="img/Banners/Banner-096.png" alt="">"', nome: "aa", preco: 10 },
+    { img: '"<img src="img/Banners/Banner-078.png" alt="">"', nome: "aa", preco: 10 }
 ];
 
 var categoria = [
-    { tema: "aaa" },
-    { tema: "aaa" },
-    { tema: "aaa" },
-    { tema: "aaa" },
-    { tema: "aaa" },
-    { tema: "aaa" },
-    { tema: "aaa" },
-    { tema: "aaa" },
-    { tema: "aaa" }
+    { tema: '"<img src="img/Banners/Banner-078.png" alt="">"' },
+    { tema:'"<img src="img/Banners/Banner-078.png" alt="">"' },
+    { tema: '"<img src="img/Banners/Banner-078.png" alt="">"' },
+    { tema: '"<img src="img/Banners/Banner-078.png" alt="">"' },
+    { tema: '"<img src="img/Banners/Banner-078.png" alt="">"' },
+    { tema: '"<img src="img/Banners/Banner-078.png" alt="">"' },
+    { tema: '"<img src="img/Banners/Banner-078.png" alt="">"' },
+    { tema: '"<img src="img/Banners/Banner-078.png" alt="">"' },
+    { tema: '"<img src="img/Banners/Banner-078.png" alt="">"' }
 ];
 
 var review = [
