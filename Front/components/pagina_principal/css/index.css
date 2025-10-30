@@ -1,0 +1,567 @@
+body{
+    background-color: #121212;
+
+    margin: 0;
+
+    width: 100%;
+    height: auto;
+}
+
+.cabecalho{
+    background-color: rgba(0, 0, 0, 0.301);
+    width: 100%;
+    height: 70px;
+
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho_esquerda{
+    background-color: antiquewhite;
+    height: 100%;
+    width: 25%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_mangue{
+    height: 100%;
+    width: 120px;
+}
+
+.cabecalho_meio{
+    background-color: #1a1a1a;
+    height: 100%;
+    width: 45%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#barra_pesquisa {
+    width: 90%;
+    height: 60%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+    background-color: #2b2b2b;
+    color: white;
+    font-size: 16px;
+    padding: 0 15px;
+
+    transition: 0.2s;
+}
+
+#barra_pesquisa::placeholder {
+    color: #aaa;
+}
+
+#barra_pesquisa:focus {
+    background-color: #3a3a3a;
+}
+
+.cabecalho_direita{
+    background-color: aquamarine;
+    height: 100%;
+    width: 30%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+}
+
+.login_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #2b2b2b;
+    color: white;
+
+    height: 60%;
+    width: 40%;
+    border-radius: 8px;
+
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.cadastro_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #2b2b2b;
+    color: white;
+
+    height: 60%;
+    width: 40%;
+    border-radius: 8px;
+
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.botao_cabecalho {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.botao_cabecalho:hover {
+    background-color: #00ff99;
+    color: #000;
+}
+
+.selecao{
+    background-color: black;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 50px;
+}
+
+.opcoes{
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.case_trending{
+    background-color: violet;
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.trending{
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    text-align: left;
+}
+
+.trending_jogo{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 20px;
+
+    padding: 10px 0;
+}
+
+.case_trending_jogo{
+    background-color: #2b2b2b;
+    width: 30%;
+    height: 280px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.img_trending{
+    background-color: #444;
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 40px;
+}
+
+.descricao_trending{
+    background-color: #333;
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 10px;
+
+    box-sizing: border-box;
+}
+
+.name_trending{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.preco_trending{
+    color: #00ff99;
+    font-weight: bold;
+}
+
+.case_recommend{
+    background-color: rgb(63, 44, 63);
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 20px;
+}
+
+.recommend{
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    text-align: left;
+}
+
+.recommend_jogo{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 20px;
+
+    padding: 10px 0;
+}
+
+.case_recommend_jogo{
+    background-color: #2b2b2b;
+    width: 30%;
+    height: 280px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.img_recommend{
+    background-color: #444;
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 40px;
+}
+
+.descricao_recommend{
+    background-color: #333;
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 10px;
+
+    box-sizing: border-box;
+}
+
+.name_recommend{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.preco_recommend{
+    color: #00ff99;
+    font-weight: bold;
+}
+
+.case_bestsellers{
+    background-color: rgb(8, 8, 8);
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 20px;
+}
+
+.bestsellers{
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    text-align: left;
+}
+
+.bestsellers_jogo{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 20px;
+
+    padding: 10px 0;
+}
+
+.case_bestsellers_jogo{
+    background-color: #2b2b2b;
+    width: 30%;
+    height: 280px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.img_bestsellers{
+    background-color: #444;
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 40px;
+}
+
+.descricao_bestsellers{
+    background-color: #333;
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 10px;
+
+    box-sizing: border-box;
+}
+
+.name_bestsellers{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.preco_bestsellers{
+    color: #00ff99;
+    font-weight: bold;
+}
+
+.case_categoria{
+    width: 90%;
+    background-color: #1e1e1e;
+
+    border-radius: 10px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.categoria{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    background-color: rgb(54, 54, 41);
+    height: 100%;
+    width: 85%;
+}
+
+.all_tema{
+    background-color:tomato;
+    height: 100%;
+    width: 15%;
+}
+
+.categoria_jogo {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-top: 10px 0;
+}
+
+.tema{
+    background-color: #00ff99;
+    width: 30%;
+    height: 120px;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+}
+
+.case_review{
+    background-color: cadetblue;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 20px;
+
+    padding: 40px 0;
+}
+
+.review_card{
+    background-color: cadetblue;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 20px;
+
+    padding: 40px 0;
+}
+
+.card_review{
+
+    color: white;
+
+    width: 22%;
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.img_review{
+    width: 100%;
+    height: 200px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 40px;
+    padding: 0;
+
+    border-radius: 10px;
+}
+
+.img_review img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.tag{
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px;
+}
+
+.nick_name{
+    background-color: aqua;
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.nota{
+    background-color: blueviolet;
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.review{
+    background-color: #222;
+
+    padding: 10px;
+  
+    font-size: 14px;
+    color: #ccc;
+}
