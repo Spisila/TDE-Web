@@ -11,10 +11,6 @@ if (mysqli_connect_errno()) {
 
   echo "Conexao falhou" . mysqli_connect_error();
 
-} else {
-
-  echo "Conexao completa";
-
 }
 
 $nome = $_POST["nome"];
@@ -24,11 +20,13 @@ $senha = $_POST["senha"];
 $data_nascimento = $_POST["data_nascimento"];
 $apelido = $_POST["nome_usuario"];
 
+$senha_hash = password_hash($senha, PASSWORD_ARGON2ID);
+
 $statement = mysqli_stmt_init($conexao);
-$query = "INSERT INTO usuario (nome, sobrenome, email, passwordHash, dataNascimento, apelidoUsuario) VALUES (?,?,?,?,?,?)";
+$query = "INSERT INTO usuario (nome, sobrenome, email, senhaHash, dataNascimento, apelidoUsuario) VALUES (?,?,?,?,?,?)";
 
 mysqli_stmt_prepare($statement, $query);
-mysqli_stmt_bind_param($statement, "ssssss", $nome, $sobrenome, $email, $senha, $data_nascimento, $apelido);
+mysqli_stmt_bind_param($statement, "ssssss", $nome, $sobrenome, $email, $senha_hash, $data_nascimento, $apelido);
 
 $result = mysqli_stmt_execute($statement);
 
@@ -45,5 +43,7 @@ if ($result === false) {
 }
 
 $json = json_encode($retorno);
+
 echo $json;
+
 ?>

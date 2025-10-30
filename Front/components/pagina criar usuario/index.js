@@ -53,7 +53,12 @@ async function criar_conta() {
 
     if (dados_retorno.status == "s") {
 
-      alert("DEU BAO");
+      alert(dados_retorno.status["mensagem"])
+
+    }
+    else {
+
+      alert(dados_retorno.status["mensagem"])
 
     }
 

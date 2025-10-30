@@ -1,56 +1,79 @@
-/*
-var date;
-var image;
-var title;
-var game;
 
-const new_list = [
-  { news_date: "25/02", image: "'imagens/Profile-008.png'", title: "NOTICIA 1", game: "TEREGH" },
-  { news_date: "12/05", image: "'imagens/Profile-058.png'", title: "NOTICIA 2", game: "MOLSO" },
-  { news_date: "25/02", image: "'imagens/Profile-028.png'", title: "NOTICIA 3", game: "MOLOS" },
-  { news_date: "12/05", image: "'imagens/Profile-068.png'", title: "NOTICIA 4", game: "ASOSL" },
-  { news_date: "12/05", image: "'imagens/Profile-097.png'", title: "NOTICIA 5", game: "XOIW" }
+const recently_played = [
+  { image: "'imagens/Profile-008.png'" },
+  { image: "'imagens/Profile-078.png'" },
+  { image: "'imagens/Profile-025.png'" },
+  { image: "'imagens/Profile-046.png'" },
+  { image: "'imagens/Profile-034.png'" },
 ];
 
-for (var i = 0; i < new_list.length; i++) {
+for (var i = 0; i < recently_played.length; i++) {
 
-  date = new_list[i].news_date;
-  image = new_list[i].image;
-  title = new_list[i].title;
-  game = new_list[i].game;
 
-  var base_game_news =
-    `<div class="base_game_news">
+  var recently_played_game =
+    `
+    <button class="game_poster_button" style="background-image: url(${recently_played[i].image});"></button>
+    `;
 
-    <div class="game_news_date">
 
-      <p>${date}</p>
+  document.getElementById("recently_played_games_list").innerHTML += recently_played_game;
 
-    </div>
-
-    <div class="game_news_image_container">
-
-      <img src=${image} alt="" class="game_news_image">
-
-    </div>
-
-    <div class="game_news_title">
-
-      <p>${title}</p>
-
-    </div>
-
-    <div class="game_news_game">
-
-      ${game}
-
-    </div>
-
-  </div>`;
-
-  console.log(image);
-
-  document.getElementById("game_news_list").innerHTML += base_game_news;
-  
 }
-*/
+
+
+const library_icons = [
+  { image: "imagens/Profile-008.png" },
+  { image: "imagens/Profile-078.png" },
+  { image: "imagens/Profile-088.png" },
+  { image: "imagens/Profile-098.png" },
+  { image: "imagens/Profile-018.png" },
+  { image: "imagens/Profile-028.png" },
+  { image: "imagens/Profile-038.png" },
+  { image: "imagens/Profile-048.png" },
+  { image: "imagens/Profile-058.png" },
+  { image: "imagens/Profile-023.png" },
+  { image: "imagens/Profile-041.png" },
+  { image: "imagens/Profile-045.png" },
+  { image: "imagens/Profile-023.png" },
+  { image: "imagens/Profile-098.png" },
+  { image: "imagens/Profile-071.png" },
+]
+
+for (var i = 0; i < library_icons.length; i++) {
+
+  var library_icons_game =
+    `
+    <button class="game_poster_button" style="background-image: url(${library_icons[i].image});"></button>
+    `;
+
+  document.getElementById("all_games_container").innerHTML += library_icons_game;
+
+}
+
+const owned_list = [
+  { nome: "JOGO 1" },
+  { nome: "JOGO 2" },
+  { nome: "JOGO 3" },
+  { nome: "JOGO 4" },
+  { nome: "JOGO 5" },
+  { nome: "JOGO 6" },
+  { nome: "JOGO 7" },
+  { nome: "JOGO 8" },
+  { nome: "JOGO 9" },
+]
+
+for (var i = 0; i < owned_list.length; i++) {
+
+  var owned_list_game =
+    `
+      <div class="base_game">
+
+          <p class="game_title">${owned_list[i].nome}</p>
+          <button class="play_game_button">Jogar</button>
+
+      </div>
+    `
+
+  document.getElementById("owned_games_list").innerHTML += owned_list_game;
+
+}
