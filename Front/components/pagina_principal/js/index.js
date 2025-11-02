@@ -14,7 +14,7 @@ function pesquisarJogo() {
 // Variavel cards
 
 var trending = [
-    { img: "img/Banners/Banner-003.png", nome: "aa", preco: 10 },
+    { img: "img/Banners/Banner-003.png", nome: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", preco: 10 },
     { img: "img/Banners/Banner-005.png", nome: "aa", preco: 10 },
     { img: "img/Banners/Banner-001.png", nome: "aa", preco: 10 },
     { img: "img/Banners/Banner-007.png", nome: "aa", preco: 10 },
@@ -41,42 +41,42 @@ var bestsellers = [
 ];
 
 var categoria = [
-    { tema: "img/Banners/Banner-078.png" },
-    { tema: "img/Banners/Banner-078.png" },
-    { tema: "img/Banners/Banner-078.png" },
-    { tema: "img/Banners/Banner-078.png"},
-    { tema: "img/Banners/Banner-078.png"},
-    { tema: "img/Banners/Banner-078.png"},
-    { tema: "img/Banners/Banner-078.png"},
-    { tema: "img/Banners/Banner-078.png"},
-    { tema: "img/Banners/Banner-078.png"}
+    { tema: "img/Banners/Banner-033.png", categoria_name: "Ação" },
+    { tema: "img/Banners/Banner-029.png", categoria_name: "RPG" },
+    { tema: "img/Banners/Banner-088.png", categoria_name: "18+" },
+    { tema: "img/Banners/Banner-019.png", categoria_name: "Puzzle" },
+    { tema: "img/Banners/Banner-009.png", categoria_name: "Educativo" },
+    { tema: "img/Banners/Banner-072.png", categoria_name: "Terror" },
+    { tema: "img/Banners/Banner-071.png", categoria_name: "FPS" },
+    { tema: "img/Banners/Banner-075.png", categoria_name: "Luta" },
+    { tema: "img/Banners/Banner-073.png", categoria_name: "Corrida" }
 ];
 
 var review = [
-    { img: "img/char.png", nick: "aa", nota: 10, comentario: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" },
-    { img: "img/bulba.png", nick: "aa", nota: 10, comentario: "aa" },
-    { img: "img/squirtle.webp", nick: "aa", nota: 10, comentario: "aa" },
-    { img: "img/mew.png", nick: "aa", nota: 10, comentario: "aa" },
+    { img: "img/Banners/Banner-001.png", nick: "aa", nota: 10, comentario: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" },
+    { img: "img/Banners/Banner-069.png", nick: "aa", nota: 10, comentario: "aa" },
+    { img: "img/Banners/Banner-023.png", nick: "aa", nota: 10, comentario: "aa" },
+    { img: "img/Banners/Banner-077.png", nick: "aa", nota: 10, comentario: "aa" },
 ];
 
 // Carregar pagina
 
 window.onload = function () {
 
-// Usuário
+    // Usuário
 
     var containerLogin = document.querySelector('.login_button');
     var containerCadastro = document.querySelector('.cadastro_button');
 
-if (usuarioLogado) {
-    containerLogin.innerHTML = '<a href="../pagina perfil usuario/index.html" class="botao_cabecalho">Conta</a>';
-    containerCadastro.innerHTML = '<a href="../pagina biblioteca usuario/index.html" class="botao_cabecalho">Biblioteca</a>';
-} else {
-    containerLogin.innerHTML = '<a href="../pagina login usuario/index.html" class="botao_cabecalho">Login</a>';
-    containerCadastro.innerHTML = '<a href="../pagina criar usuario/index.html" class="botao_cabecalho">Cadastro</a>';
-}
+    if (usuarioLogado) {
+        containerLogin.innerHTML = '<a href="../pagina perfil usuario/index.html" class="botao_cabecalho">Conta</a>';
+        containerCadastro.innerHTML = '<a href="../pagina biblioteca usuario/index.html" class="botao_cabecalho">Biblioteca</a>';
+    } else {
+        containerLogin.innerHTML = '<a href="../pagina login usuario/index.html" class="botao_cabecalho">Login</a>';
+        containerCadastro.innerHTML = '<a href="../pagina criar usuario/index.html" class="botao_cabecalho">Cadastro</a>';
+    }
 
-// Templat card
+    // Templat card
 
     var container_trending = document.getElementById("trending");
 
@@ -91,7 +91,7 @@ if (usuarioLogado) {
                     </div>
                     <div class="descricao_trending">
                         <div class="name_trending">
-                            ${trending[i].nome}
+                           <a href="../pagina jogo/index.html">${trending[i].nome}</a>
                         </div>
                         <div class="preco_trending">
                             ${trending[i].preco}
@@ -115,7 +115,7 @@ if (usuarioLogado) {
                     </div>
                     <div class="descricao_recommend">
                         <div class="name_recommend">
-                            ${recommend[i].nome}
+                            <a href="../pagina jogo/index.html" class="links">${recommend[i].nome}</a>
                         </div>
                         <div class="preco_recommend">
                             ${recommend[i].preco}
@@ -139,7 +139,7 @@ if (usuarioLogado) {
                     </div>
                     <div class="descricao_bestsellers">
                         <div class="name_bestsellers">
-                            ${bestsellers[i].nome}
+                            <a href="../pagina jogo/index.html" class="links">${bestsellers[i].nome}</a>
                         </div>
                         <div class="preco_bestsellers">
                             ${bestsellers[i].preco}
@@ -159,8 +159,13 @@ if (usuarioLogado) {
             container_categoria.innerHTML +=
 
                 `
-                <div class="tema">
-                    <img src=${categoria[i].tema}>
+                <div class="card_categoria">
+                    <div class="tema">
+                        <img src=${categoria[i].tema}>
+                    </div>
+                    <div class="categoria_name">
+                        <a href="../pagina catalogo/index.html" class="links">${categoria[i].categoria_name}</a>
+                    </div>
                 </div>
             `;
         }
@@ -177,7 +182,7 @@ if (usuarioLogado) {
                 </div>
                 <div class="tag">
                     <div class="nick_name">
-                        ${review[i].nick}
+                        <a href="../pagina review/index.html" class="links">${review[i].nick}</a>
                     </div>
                     <div class="nota">
                         ${review[i].nota}
