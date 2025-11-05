@@ -67,13 +67,20 @@ window.onload = function () {
 
     var containerLogin = document.querySelector('.login_button');
     var containerCadastro = document.querySelector('.cadastro_button');
+    var containerExtra = document.querySelector('.extra_button');
 
     if (usuarioLogado) {
         containerLogin.innerHTML = '<a href="../pagina perfil usuario/index.html" class="botao_cabecalho">Conta</a>';
         containerCadastro.innerHTML = '<a href="../pagina biblioteca usuario/index.html" class="botao_cabecalho">Biblioteca</a>';
+
+        if (containerExtra) {
+            containerExtra.innerHTML = '<a href="../pagina admin/index.html" class="botao_cabecalho">Painel</a>';
+        }
     } else {
         containerLogin.innerHTML = '<a href="../pagina login usuario/index.html" class="botao_cabecalho">Login</a>';
         containerCadastro.innerHTML = '<a href="../pagina criar usuario/index.html" class="botao_cabecalho">Cadastro</a>';
+
+        if (containerExtra) containerExtra.innerHTML = '';
     }
 
     // Templat card

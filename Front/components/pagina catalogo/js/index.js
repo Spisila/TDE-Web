@@ -51,19 +51,22 @@ window.onload = function () {
     mostra_o_jogos(jogos);
 
     var containerLogin = document.querySelector('.login_button');
-
     var containerCadastro = document.querySelector('.cadastro_button');
+    var containerExtra = document.querySelector('.extra_button');
 
     if (usuarioLogado) {
+        containerLogin.innerHTML = '<a href="../pagina perfil usuario/index.html" class="botao_cabecalho">Conta</a>';
+        containerCadastro.innerHTML = '<a href="../pagina biblioteca usuario/index.html" class="botao_cabecalho">Biblioteca</a>';
 
-        containerLogin.innerHTML = '<a href="../pagina perfil usuario/index.html">Conta</a>';
-
-        containerCadastro.innerHTML = '<a href="../pagina biblioteca usuario/index.html">Biblioteca</a>';
-
+        if (containerExtra) {
+            containerExtra.innerHTML = '<a href="../pagina admin/index.html" class="botao_cabecalho">Painel</a>';
+        }
+        
     } else {
-        containerLogin.innerHTML = '<a href="../pagina login usuario/index.html">Login</a>';
+        containerLogin.innerHTML = '<a href="../pagina login usuario/index.html" class="botao_cabecalho">Login</a>';
+        containerCadastro.innerHTML = '<a href="../pagina criar usuario/index.html" class="botao_cabecalho">Cadastro</a>';
 
-        containerCadastro.innerHTML = '<a href="../pagina criar usuario/index.html">Cadastro</a>';
+        if (containerExtra) containerExtra.innerHTML = '';
     }
 
     document.getElementById("button_filtrar").onclick = function () {
