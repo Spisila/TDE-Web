@@ -196,5 +196,3 @@ window.onload = function () {
         container_review.innerHTML += card_review;
     }
 };
-
-// Comer o spisila
