@@ -204,7 +204,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
-    gap: 20px;
+    gap: 40px;
     margin-left: 10px;
 }
 
@@ -231,6 +231,8 @@ body {
 
     color: white;
     padding-left: 10px;
+
+    font-size: 20px;
 }
 
 .jogo {
@@ -277,18 +279,42 @@ body {
     flex-direction: column;
 
     gap: 15px;
-    border: 3px solid rgba(0, 0, 0, 0.356);
-    border-radius: 10px;
-
 }
 
 .review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+
+    border: 3px solid rgba(0, 0, 0, 0.356);
+    border-radius: 10px;
+}
+
+.nome_jogo_review{
+    width: 98%;
+    height: 20%;
+
+    display: flex;
+    justify-items: center;
+
+    color: white;
+
+    font-size: 20px;
+    padding-left: 10px;
+
+    border: 3px solid rgba(0, 0, 0, 0.356);
+}
+
+.desc_jogo_review{
+    width: 100%;
+    height: 100%;
 
     display: flex;
     flex-direction: row;
-    align-items: center;
 
-    gap: 15px;
+    gap: 10px;
 }
 
 .img_jogo_rev {
@@ -299,6 +325,8 @@ body {
 
     overflow: hidden;
     flex-shrink: 0;
+
+    margin-bottom: 6px;
 }
 
 .img_jogo_rev img{
@@ -318,9 +346,10 @@ body {
 
     font-size: 12px;
 
-    padding: 5px 10px;
-
     color: white;
+
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .case_contem {

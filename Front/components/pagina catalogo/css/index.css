@@ -106,7 +106,7 @@ body {
     gap: 5px;
 }
 
-.login_button {
+.botao_cabecalho{
     background: #00d484;
 
     font-weight: bold;
@@ -115,35 +115,12 @@ body {
     border-radius: 10px;
 
     cursor: pointer;
-}
-
-.login_button a{
+    
     text-decoration: none;
-    color: #000000;
+    color: #000000;    
 }
 
-.login_button:hover {
-    box-shadow: 0 0 15px #00ff99;
-}
-
-.cadastro_button {
-    background-color: #00d484;
-    color: #000000;
-
-    font-weight: bold;
-
-    padding: 10px 25px;
-    border-radius: 10px;
-
-    cursor: pointer;
-}
-
-.cadastro_button a{
-    text-decoration: none;
-    color: #000000;
-}
-
-.cadastro_button:hover {
+.botao_cabecalho:hover{
     box-shadow: 0 0 15px #00ff99;
 }
 
