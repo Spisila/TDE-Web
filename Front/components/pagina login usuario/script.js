@@ -1,10 +1,10 @@
-var email = document.getElementById("email_input");
-var senha = document.getElementById("senha_input");
+const email = document.getElementById("email_input");
+const senha = document.getElementById("senha_input");
 
-var login_botao = document.getElementById("login_botao");
+const login_botao = document.getElementById("login_botao");
 login_botao.addEventListener('click', fazer_login);
 
-async function fazer_login(params) {
+async function fazer_login() {
 
   if (email.value === '') {
 
@@ -18,29 +18,58 @@ async function fazer_login(params) {
   }
   else {
 
-    var form_dados = new FormData()
-    form_dados.append("email", email.value)
-    form_dados.append("senha", senha.value)
+    try {
+      console.log("Buscando chave pública...");
+      const response = await fetch("../pagina criar usuario/pegar_chave_publica.php");
+      const publicKey = await response.text();
 
-    var retorno = await fetch("login_usuario.php", {
-      method: "POST",
-      body: form_dados
-    })
+      console.log("Gerando chave AES...");
+      const aesKey = CryptoJS.lib.WordArray.random(32);
+      const aesIV = CryptoJS.lib.WordArray.random(16);
 
-    var dados_retorno = await retorno.json();
+      console.log("Criptografando senha com AES...");
+      const senhaPlana = senha.value;
+      const encryptedPassword = CryptoJS.AES.encrypt(senhaPlana, aesKey, { iv: aesIV });
 
-    if (dados_retorno.status == "s") {
+      console.log("Criptografando chave AES com RSA...");
+      const symmetricPayload = aesKey.toString(CryptoJS.enc.Base64) + ":" + aesIV.toString(CryptoJS.enc.Base64);
 
-      alert("Usuario Existe");
+      const rsa = new JSEncrypt();
+      rsa.setPublicKey(publicKey);
+      const encryptedSymmetricPayload = rsa.encrypt(symmetricPayload);
+
+      const dados_para_enviar = {
+        email: email.value,
+        rsa_payload: encryptedSymmetricPayload,
+        aes_data: encryptedPassword.toString()
+      };
+
+      console.log("Enviando pacote de login criptografado...");
+      var retorno = await fetch("login_usuario.php", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(dados_para_enviar)
+      });
+
+      var dados_retorno = await retorno.json();
+
+      alert(dados_retorno.mensagem);
+
+      if (dados_retorno.status == "s") {
+        window.location.href = "../pagina_principal/index.html";
+      }
 
     }
-    else if (dados_retorno.status == "n") {
-
-      alert("Usuario não existe");
-
+    catch (error) {
+      console.error("Erro no processo de criptografia ou login:", error);
+      alert("Falha ao enviar dados de login.");
     }
-
   }
+
+
+
 
 
 }
