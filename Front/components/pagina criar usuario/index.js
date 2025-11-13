@@ -78,7 +78,10 @@ async function criar_conta() {
 
       alert(dados_retorno.mensagem);
 
-      console.log(dados_retorno);
+      if (dados_retorno.status == "s") {
+        window.location.href = "../pagina perfil usuario/index.html";
+        localStorage.setItem("usuarioLogado", "true");
+      }
 
     } catch (error) {
       console.error("Erro no processo de criptografia ou envio:", error);

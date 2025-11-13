@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: text/plain');
 
-$path = 'D:\Faculdade\XAMPPS\htdocs\MANGUEGIT\TDE-Web\chaves\public.pem';
+$path = 'D:\Faculdade\XAMPPS\htdocs\TDE-Web\chaves\public.pem';
 
 if (file_exists($path)) {
     echo file_get_contents($path);

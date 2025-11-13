@@ -58,7 +58,8 @@ async function fazer_login() {
       alert(dados_retorno.mensagem);
 
       if (dados_retorno.status == "s") {
-        window.location.href = "../pagina_principal/index.html";
+        window.location.href = "../pagina perfil usuario/index.html";
+        localStorage.setItem("usuarioLogado", "true");
       }
 
     }

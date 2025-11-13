@@ -7,7 +7,7 @@ try {
 
   $data = json_decode(file_get_contents('php://input'));
 
-  $privateKeyPEM = file_get_contents('D:\Faculdade\XAMPPS\htdocs\MANGUEGIT\TDE-Web\chaves\private.key');
+  $privateKeyPEM = file_get_contents('D:\Faculdade\XAMPPS\htdocs\TDE-Web\chaves\private.key');
   $privateKey = openssl_pkey_get_private($privateKeyPEM);
   if ($privateKey === false) {
     throw new Exception('Não foi possível carregar a chave privada.');
