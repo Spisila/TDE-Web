@@ -1,6 +1,7 @@
 // Verificador login/cadastro ._.
 
-var usuarioLogado = false;
+var usuarioLogado = localStorage.getItem("usuarioLogado") === "true";
+console.log("Usuário logado?", usuarioLogado);
 
 // Pesquisa
 
@@ -14,30 +15,30 @@ function pesquisarJogo() {
 // Variavel cards
 
 var trending = [
-    { img: "img/Banners/Banner-003.png", nome: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", preco: 10 },
-    { img: "img/Banners/Banner-005.png", nome: "aa", preco: 10 },
-    { img: "img/Banners/Banner-001.png", nome: "aa", preco: 10 },
-    { img: "img/Banners/Banner-007.png", nome: "aa", preco: 10 },
-    { img: "img/Banners/Banner-010.png", nome: "aa", preco: 10 },
-    { img: "img/Banners/Banner-002.png", nome: "aa", preco: 10 }
+    { img: "img/Banners/Banner-003.png", nome: "nome_exemplo", preco: 100 },
+    { img: "img/Banners/Banner-005.png", nome: "nome_exemplo", preco: 123 },
+    { img: "img/Banners/Banner-001.png", nome: "nome_exemplo", preco: 1 },
+    { img: "img/Banners/Banner-007.png", nome: "nome_exemplo", preco: 160 },
+    { img: "img/Banners/Banner-010.png", nome: "nome_exemplo", preco: 200 },
+    { img: "img/Banners/Banner-002.png", nome: "nome_exemplo", preco: 10 }
 ];
 
 var recommend = [
-    { img: "img/Banners/Banner-087.png", nome: "aa", preco: 10 },
-    { img: "img/Banners/Banner-069.png", nome: "aa", preco: 10 },
-    { img: "img/Banners/Banner-054.png", nome: "aa", preco: 10 },
-    { img: "img/Banners/Banner-012.png", nome: "aa", preco: 10 },
-    { img: "img/Banners/Banner-024.png", nome: "aa", preco: 10 },
-    { img: "img/Banners/Banner-076.png", nome: "aa", preco: 10 }
+    { img: "img/Banners/Banner-087.png", nome: "nome_exemplo", preco: 99 },
+    { img: "img/Banners/Banner-069.png", nome: "nome_exemplo", preco: 54 },
+    { img: "img/Banners/Banner-054.png", nome: "nome_exemplo", preco: 22 },
+    { img: "img/Banners/Banner-012.png", nome: "nome_exemplo", preco: 120 },
+    { img: "img/Banners/Banner-024.png", nome: "nome_exemplo", preco: 154 },
+    { img: "img/Banners/Banner-076.png", nome: "nome_exemplo", preco: 12 }
 ];
 
 var bestsellers = [
-    { img: "img/Banners/Banner-043.png", nome: "aa", preco: 10 },
-    { img: "img/Banners/Banner-046.png", nome: "aa", preco: 10 },
-    { img: "img/Banners/Banner-056.png", nome: "aa", preco: 10 },
-    { img: "img/Banners/Banner-090.png", nome: "aa", preco: 10 },
-    { img: "img/Banners/Banner-096.png", nome: "aa", preco: 10 },
-    { img: "img/Banners/Banner-078.png", nome: "aa", preco: 10 }
+    { img: "img/Banners/Banner-043.png", nome: "nome_exemplo", preco: 11 },
+    { img: "img/Banners/Banner-046.png", nome: "nome_exemplo", preco: 116 },
+    { img: "img/Banners/Banner-056.png", nome: "nome_exemplo", preco: 109 },
+    { img: "img/Banners/Banner-090.png", nome: "nome_exemplo", preco: 269 },
+    { img: "img/Banners/Banner-096.png", nome: "nome_exemplo", preco: 290 },
+    { img: "img/Banners/Banner-078.png", nome: "nome_exemplo", preco: 175 }
 ];
 
 var categoria = [
@@ -53,10 +54,10 @@ var categoria = [
 ];
 
 var review = [
-    { img: "img/Banners/Banner-001.png", nick: "aa", nota: 10, comentario: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" },
-    { img: "img/Banners/Banner-069.png", nick: "aa", nota: 10, comentario: "aa" },
-    { img: "img/Banners/Banner-023.png", nick: "aa", nota: 10, comentario: "aa" },
-    { img: "img/Banners/Banner-077.png", nick: "aa", nota: 10, comentario: "aa" },
+    { img: "img/Banners/Banner-001.png", nick: "usuario_exemplo", nota: 10, comentario: "review_exemplo" },
+    { img: "img/Banners/Banner-069.png", nick: "usuario_exemplo", nota: 10, comentario: "review_exemplo"},
+    { img: "img/Banners/Banner-023.png", nick: "usuario_exemplo", nota: 10, comentario: "review_exemplo" },
+    { img: "img/Banners/Banner-077.png", nick: "usuario_exemplo", nota: 10, comentario: "review_exemplo" },
 ];
 
 // Carregar pagina
@@ -74,7 +75,7 @@ window.onload = function () {
         containerCadastro.innerHTML = '<a href="../pagina biblioteca usuario/index.html" class="botao_cabecalho">Biblioteca</a>';
 
         if (containerExtra) {
-            containerExtra.innerHTML = '<a href="../pagina admin/index.html" class="botao_cabecalho">Painel</a>';
+            containerExtra.innerHTML = '<a href="../pagina carrinho/index.html" class="botao_cabecalho">Carrinho</a>';
         }
     } else {
         containerLogin.innerHTML = '<a href="../pagina login usuario/index.html" class="botao_cabecalho">Login</a>';

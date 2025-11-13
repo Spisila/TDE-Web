@@ -719,14 +719,12 @@ background: image();
     display: flex;
     justify-content: space-between;
 
-    padding: 10px;
 }
 
 .nick_name {
-    width: 30%;
+
 
     display: flex;
-    justify-items: center;
     align-items: center;
 }
 
@@ -740,7 +738,6 @@ background: image();
 }
 
 .nota {
-    width: 70%;
 
     display: flex;
     align-items: center;

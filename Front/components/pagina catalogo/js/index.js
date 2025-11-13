@@ -1,5 +1,7 @@
 //Usuario
-var usuarioLogado = false;
+var usuarioLogado = localStorage.getItem("usuarioLogado") === "true";
+console.log("Usuário logado?", usuarioLogado);
+
 
 //Jogos
 var jogos = [
@@ -59,7 +61,7 @@ window.onload = function () {
         containerCadastro.innerHTML = '<a href="../pagina biblioteca usuario/index.html" class="botao_cabecalho">Biblioteca</a>';
 
         if (containerExtra) {
-            containerExtra.innerHTML = '<a href="../pagina admin/index.html" class="botao_cabecalho">Painel</a>';
+            containerExtra.innerHTML = '<a href="../pagina carrinho/index.html" class="botao_cabecalho">Carrinho</a>';
         }
         
     } else {
@@ -97,7 +99,7 @@ window.onload = function () {
         document.getElementById("filtro_ordenar").value = "todos";
         document.getElementById("filtro_genero").value = "todos";
         document.getElementById("preco_min").value = 0;
-        document.getElementById("preco_max").value = 100000000000000000;
+        document.getElementById("preco_max").value = 500;
 
         mostra_o_jogos(jogos);
     };
