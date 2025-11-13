@@ -5,25 +5,24 @@ console.log("Usuário logado?", usuarioLogado);
 
 //Jogos
 var jogos = [
-    { categoria: "trending", genero: "acao", img: "img/Banners/Banner-001.png", nome: "a", preco: 30 },
-    { categoria: "trending", genero: "18", img: "img/Banners/Banner-002.png", nome: "a", preco: 70 },
-    { categoria: "recommend", genero: "luta", img: "img/Banners/Banner-003.png", nome: "a", preco: 90 },
-    { categoria: "recommend", genero: "corrida", img: "img/Banners/Banner-004.png", nome: "a", preco: 25 },
-    { categoria: "bestsellers", genero: "18", img: "img/Banners/Banner-005.png", nome: "a", preco: 50 },
-    { categoria: "bestsellers", genero: "fps", img: "img/Banners/Banner-006.png", nome: "a", preco: 120 },
-    { categoria: "bestsellers", genero: "terror", img: "img/Banners/Banner-007.png", nome: "a", preco: 15 },
-    { categoria: "trending", genero: "rpg", img: "img/Banners/Banner-008.png", nome: "a", preco: 80 },
-    { categoria: "recommend", genero: "terror", img: "img/Banners/Banner-009.png", nome: "a", preco: 40 },
-    { categoria: "recommend", genero: "18", img: "img/Banners/Banner-010.png", nome: "a", preco: 100 },
-    { categoria: "trending", genero: "terror", img: "img/Banners/Banner-011.png", nome: "a", preco: 60 },
-    { categoria: "recommend", genero: "rpg", img: "img/Banners/Banner-012.png", nome: "a", preco: 45 },
-    { categoria: "bestsellers", genero: "educativo", img: "img/Banners/Banner-013.png", nome: "a", preco: 110 },
-    { categoria: "bestsellers", genero: "18", img: "img/Banners/Banner-014.png", nome: "a", preco: 75 },
-    { categoria: "trending", genero: "puzzle", img: "img/Banners/Banner-015.png", nome: "a", preco: 90 },
-    { categoria: "recommend", genero: "puzzle", img: "img/Banners/Banner-016.png", nome: "a", preco: 0 }
+    { categoria: "trending", genero: "acao", img: "img/Banners/Banner-001.png", nome: "exemplo nome jogo", preco: 30 },
+    { categoria: "trending", genero: "18", img: "img/Banners/Banner-002.png", nome: "exemplo nome jogo", preco: 70 },
+    { categoria: "recommend", genero: "luta", img: "img/Banners/Banner-003.png", nome: "exemplo nome jogo", preco: 90 },
+    { categoria: "recommend", genero: "corrida", img: "img/Banners/Banner-004.png", nome: "exemplo nome jogo", preco: 25 },
+    { categoria: "bestsellers", genero: "18", img: "img/Banners/Banner-005.png", nome: "exemplo nome jogo", preco: 50 },
+    { categoria: "bestsellers", genero: "fps", img: "img/Banners/Banner-006.png", nome: "exemplo nome jogo", preco: 120 },
+    { categoria: "bestsellers", genero: "terror", img: "img/Banners/Banner-007.png", nome: "exemplo nome jogo", preco: 15 },
+    { categoria: "trending", genero: "rpg", img: "img/Banners/Banner-008.png", nome: "exemplo nome jogo", preco: 80 },
+    { categoria: "recommend", genero: "terror", img: "img/Banners/Banner-009.png", nome: "exemplo nome jogo", preco: 40 },
+    { categoria: "recommend", genero: "18", img: "img/Banners/Banner-010.png", nome: "exemplo nome jogo", preco: 100 },
+    { categoria: "trending", genero: "terror", img: "img/Banners/Banner-011.png", nome: "exemplo nome jogo", preco: 60 },
+    { categoria: "recommend", genero: "rpg", img: "img/Banners/Banner-012.png", nome: "exemplo nome jogo", preco: 45 },
+    { categoria: "bestsellers", genero: "educativo", img: "img/Banners/Banner-013.png", nome: "exemplo nome jogo", preco: 110 },
+    { categoria: "bestsellers", genero: "18", img: "img/Banners/Banner-014.png", nome: "exemplo nome jogo", preco: 75 },
+    { categoria: "trending", genero: "puzzle", img: "img/Banners/Banner-015.png", nome: "exemplo nome jogo", preco: 90 },
+    { categoria: "recommend", genero: "puzzle", img: "img/Banners/Banner-016.png", nome: "exemplo nome jogo", preco: 0 }
 ];
 
-//Renderização mine 2015
 function mostra_o_jogos(lista) {
 
     var container = document.getElementById("catalogo");
@@ -48,7 +47,6 @@ function mostra_o_jogos(lista) {
     }
 }
 
-//Rodou
 window.onload = function () {
     mostra_o_jogos(jogos);
 
