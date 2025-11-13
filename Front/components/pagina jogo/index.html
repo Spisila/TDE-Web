@@ -1,17 +1,118 @@
 <html>
 
-  <head>
+<head>
 
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/index.js"></script>
+  <title>Pagina do Jogo</title>
+</head>
 
-  </head>
+<body>
+  <nav class="navegacao">
+    <ul class="menu-categoria">
+      <li>
+        <a href="../pagina_principal/index.html" class="menu-link">
+          <img src="../1920x1080_background.png" alt="página Inícial" class="foto">
+          <span>Manguezal Dos Games</span>
+        </a>
+      </li>
+      <li>
+        <a href="../pagina perfil usuario/index.html" class="menu-link">
+          <img src="img/Profile-053.png" alt="página de perfil" class="foto">
+        </a>
+      </li>
+    </ul>
 
-  <body>
+  </nav>
+
+
+  <div class="tudo">
+    <div class="button-voltar">
+      <a href="../pagina catalogo/index.html" class="button-carrinho">Pagina Catalogo</a>
+    </div>
+
+    <div class="produto-info">
 
 
 
-  </body>
+      <form class="card-produto" id="form-add-carrinho" onsubmit="adicionarAoCarrinho(event)">
+        <h2 class="titulo-produto">O Tomate Vermelho</h2>
 
+        <div class="inform-produto">
+          <span class="desenvolvedora">GLS</span>
+          <span class="etiqueta">✓ Em estoque</span>
+          <span class="etiqueta">Download digital</span>
+        </div>
+
+        <div class="texto">
+          <span>🔥 Mais de 10.000 usuários compraram este produto!</span>
+        </div>
+
+        <div class="opcoes-produto">
+          <select name="plataforma">
+            <option value="pc">PC</option>
+          </select>
+          <select name="edicao">
+            <option value="enhanced">Edição Limitada</option>
+          </select>
+        </div>
+
+        <div class="preco-produto">
+          R$ 749,99
+        </div>
+
+        <input type="hidden" name="id_produto" value="1">
+        <input type="hidden" name="nome_produto" value="O Tomate Vermelho">
+        <input type="hidden" name="preco" value="749.99">
+
+        <div class="acoes-produto">
+          <button class="botao-carrinho" onclick="adicionarAoCarrinho(event)">🛒 Adicionar ao carrinho</button>
+        </div>
+      </form>
+
+      <div class="imagem-jogo-container">
+        <img src="img/Banner-051.png" alt="Capa do Jogo O Tomate Vermelho" class="imagem-jogo">
+      </div>
+    </div>
+
+
+    <div class="resumo-dados">
+      <div class="review-jogo">
+
+        <div class="review-item">
+          <h3 class="dados">Reviews do jogo:</h3><br>
+          <div class="review-header">
+
+            <span class="review-usuario">AnaGamer_22</span>
+            <span class="review-nota">★★★★☆</span>
+          </div>
+          <p class="review-texto">
+            "Jogo fantástico! A história me prendeu do início ao fim e os gráficos
+            são muito bonitos. Só não dou 5 estrelas porque achei o final um pouco corrido."
+          </p>
+        </div>
+
+        <div class="review-item">
+          <div class="review-header">
+            <span class="review-usuario">Carlos_BR</span>
+            <span class="review-nota">★★★★★</span>
+          </div>
+          <p class="review-texto">
+            "Perfeito! Um dos melhores jogos que joguei esse ano. A jogabilidade é fluida
+            e a trilha sonora é espetacular. Recomendo 100%!"
+          </p>
+        </div>
+
+      </div>
+
+      <a href="../pagina review/index.html" class="button-carrinho">
+        Pagina de Review
+      </a>
+    </div>
+  </div>
+
+
+</body>
 
 </html>

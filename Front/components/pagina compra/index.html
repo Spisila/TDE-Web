@@ -1,17 +1,102 @@
 <html>
 
-  <head>
+<head>
 
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/index.js"></script>
+  <title>Pagina de Compra</title>
+</head>
 
-  </head>
+<body>
+  <nav class="navegacao">
+    <ul class="menu-categoria">
+      <li>
+        <a href="../pagina_principal/index.html" class="menu-link">
+          <img src="../1920x1080_background.png" alt="página Inícial" class="foto">
+          <span>Manguezal Dos Games</span>
+        </a>
+      </li>
+      <li>
+        <a href="../pagina perfil usuario/index.html" class="menu-link">
+          <img src="img/Profile-053.png" alt="página de perfil" class="foto">
+        </a>
+      </li>
+    </ul>
+  </nav>
 
-  <body>
+  <div class="tudo">
+    <div class="button-voltar">
+      <a href="../pagina catalogo/index.html" class="button-carrinho">Pagina Catalogo</a>
+
+    </div>
+
+
+    <div class="resumo-pedido">
+
+      <div class="itens">
+        <a>Itens</a>
+        <a>Valor</a>
+      </div>
+
+      <div class="pedidos">
+
+        <div class="jogo">
+          <img src="img/Banner-020.png" alt="perfil do jogo" class="foto-jogo" href="colocar o link da pag do jogo">
+
+        </div>
+        <div class="nome-jogo">
+          <h2>O Tomate Vermelho</h2>
+        </div>
+
+        <div class="valor">
+          759,90
+        </div>
+
+      </div>
+
+      <div class="total">
+        <a>Total</a>
+        <a>759,90</a>
+      </div>
+
+    </div>
 
 
 
-  </body>
+
+
+    <h3 class="dados">Pagamento</h3>
+
+    <form id="form-pagamento">
+      <div class="resumo-dados">
+        <div class="dados-pessoais">
+
+          <label>Número do Cartão:</label>
+          <input class="input-form" type="text" id="numero-cartao" name="numero_cartao" inputmode="numeric"
+            placeholder="0000 0000 0000 0000" pattern="[0-9]{16}" title="Digite o número do seu cartão." required />
+
+          <label>Nome no Cartão:</label>
+          <input class="input-form" type="text" name="nome_cartao" placeholder="Nome no cartão" required />
+
+          <label>Validade do Cartão:</label>
+          <input class="input-form" type="text" id="validade-cartao" name="validade_cartao" inputmode="numeric"
+            placeholder="MM/AAAA" pattern="[0-9]{6}" title="Digite a data de validade do cartao." required />
+
+          <label>Codigo de Segurança:</label>
+          <input class="input-form" type="tel" name="codigo_seguranca" pattern="[0-9]{3}"
+            placeholder="Codigo de segurança" required />
+
+        </div>
+
+        <button type="button" class="button-form" onclick="finalizarCompra()">
+          Confirma Pagamento
+        </button>
+
+      </div>
+    </form>
+  </div>
+</body>
 
 
 </html>

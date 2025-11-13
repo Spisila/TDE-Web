@@ -1,17 +1,73 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 
 <head>
-
   <meta charset="UTF-8">
+  <title>Pagina Review</title>
   <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
 
+  <header>
+    <h1><a>Reviews de Jogos</a></h1>
 
+  </header>
+
+  <main>
+    <article class="review-jogo">
+
+      <a href="../pagina jogo/index.html" class="button">Pagina do Jogo</a>
+
+      <h2 id="review-titulo"></h2>
+
+      <div class="review-dados">
+        <p id="review-dados"></p>
+      </div>
+
+      <img src="img/Banner-047.png" alt="Capa do jogo Tomate Totoso " class="capa-jogo" id="capa-jogo">
+
+      <aside class="informacoes">
+        <h3>Ficha Técnica</h3>
+        <ul>
+          <li><strong>Desenvolvedora:</strong> <span id="dev"></span></li>
+          <li><strong>Plataformas:</strong> <span id="plataforma"></span></li>
+          <li><strong>Gênero:</strong> <span id="genero"></span></li>
+        </ul>
+      </aside>
+
+      <section class="reviews">
+        <h3 id="review-h3-1"></h3>
+        <p id="review-p1"></p>
+
+        <h3 id="review-h3-2"></h3>
+        <p id="review-p2"></p>
+
+        <h3>Prós e Contras</h3>
+        <ul>
+          <li class="pros" id="review-pro-1"></li>
+          <li class="pros" id="review-pro-2"></li>
+          <li class="cons" id="review-con-1"></li>
+          <li class="cons" id="review-con-2"></li>
+        </ul>
+      </section>
+
+      <footer class="rodape">
+        <div class="pontuacao">
+          <span class="nota">Nota Final</span>
+          <span class="nota-pontua" id="nota-pontua"></span>
+        </div>
+
+        <button id="botao" class="button">Ver outra review</button>
+      </footer>
+
+    </article>
+  </main>
+
+
+
+  <script src="js/index.js"></script>
 
 </body>
-
 
 </html>

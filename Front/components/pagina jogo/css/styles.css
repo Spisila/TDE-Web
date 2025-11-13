@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #192645;
+    color: #e2e8f0;
+}
+
+span {
+    font-size: 20px;
+}
+
+.navegacao {
+    position: fixed;
+    top: 0;
+    background: rgba(15, 23, 42, 0.3);
+    width: 100%;
+    z-index: 100;
+    padding: 0.8rem;
+
+}
+
+.menu-categoria {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 3rem;
+    align-items: center;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center
+}
+
+.foto {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.tudo {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 40px;
+
+}
+
+.button-carrinho {
+    background-color: #21345e;
+    color: #FFF;
+    border-radius: 3px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 20px;
+
+
+}
+
+.button-carrinho:hover {
+    background-color: #7373a7;
+    cursor: pointer;
+}
+
+.button-voltar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    min-height: 21vh;
+    width: 90%;
+    max-width: 1000px;
+
+}
+
+.resumo-dados {
+    width: 90%;
+    max-width: 1000px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.dados {
+    width: 90%;
+    max-width: 1000px;
+}
+
+.review-jogo {
+    width: 600px;
+    min-height: 300px;
+    background-color: #21345e;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+}
+
+
+.card-produto {
+    background-color: #21345e;
+    border-radius: 8px;
+    padding: 24px;
+    color: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.titulo-produto {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.inform-produto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.etiqueta {
+    background-color: #3e3e3e;
+    color: #e0e0e0;
+    padding: 6px 10px;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+.desenvolvedora {
+    background-color: rgb(146, 0, 119);
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-weight: bold;
+}
+
+.texto {
+    color: #f9a825;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.opcoes-produto {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.opcoes-produto select {
+    flex: 1;
+    background-color: #3e3e3e;
+    color: #ffffff;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 12px 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.preco-produto {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.acoes-produto {
+    display: flex;
+    gap: 12px;
+}
+
+
+.botao-carrinho {
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.botao-carrinho:hover {
+    opacity: 0.9;
+    background-color: #7373a7;
+    cursor: pointer;
+
+}
+
+.botao-carrinho {
+    background-color: #192645;
+    color: #ffffff;
+    flex: 1;
+    text-align: center;
+}
+
+.review-item {
+    border-bottom: 1px solid #3a4f80;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.review-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.review-usuario {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.review-nota {
+    font-size: 1.2rem;
+    color: #f9a825;
+}
+
+.review-texto {
+    color: #ffffff;
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+}
+
+.produto-info {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    max-width: 1000px;
+    width: 90%;
+    justify-content: center;
+
+}
+
+.imagem-jogo-container {
+    flex-shrink: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    max-width: 50%;
+}
+
+.imagem-jogo {
+    width: 100%;
+    height: auto;
+    display: block;
+}

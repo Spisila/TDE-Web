@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #192645;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(15, 23, 42, 0.3);
+    color: white;
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.review-jogo {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #21345e;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(40, 102, 234, 0.3);
+    overflow: hidden;
+}
+
+.review-dados,
+.informacoes,
+.reviews,
+.review-footer {
+    padding: 20px 30px;
+}
+
+.capa-jogo {
+    padding-top: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+
+.review-dados {
+    font-size: 0.9em;
+    color: #ffffff;
+    border-bottom: 1px solid;
+}
+
+
+.informacoes {
+    background-color: #21345e;
+    border-bottom: 1px solid;
+
+}
+
+.informacoes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.informacoes li {
+    margin-bottom: 5px;
+}
+
+.reviews ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.reviews li {
+    padding-left: 25px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+li.pros::before {
+    content: '✔';
+    color: rgb(1, 255, 1);
+    position: absolute;
+    left: 0;
+}
+
+li.cons::before {
+    content: '✖';
+    color: red;
+    position: absolute;
+    left: 0;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #21345e;
+    color: #21345e;
+    border-top: 2px solid #ffffff;
+}
+
+.pontuacao {
+    text-align: center;
+}
+
+.nota {
+    display: block;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.nota-pontua {
+    display: block;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #0470e3;
+}
+
+.button {
+    display: inline-block;
+    background-color: #505091;
+    color: #ffffff;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0470e3;
+}
